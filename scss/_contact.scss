@@ -1,0 +1,60 @@
+.contact {
+  padding-top: 174px;
+
+  .container {
+    display: flex;
+    gap: 48px;
+
+    .contact-image {
+      border-radius: 10px;
+    }
+  }
+
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .contact-card {
+      padding: 35px 45px;
+      border-radius: 10px;
+      background: $primary-color;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .contact-card-paragraph {
+        display: flex;
+        gap: 20px;
+      }
+
+      button {
+        margin-top: 10px;
+        color: $primary-color;
+        background-color: #fff;
+        padding: 9px 15px;
+        font-size: 13px;
+        max-width: 155px;
+        white-space: nowrap;
+        border-radius: 3px;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-color: #00709d;
+          color: #fff;
+        }
+      }
+
+      h1 {
+        font-family: $secondary-font;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      p {
+        font-family: $primary-font;
+        font-size: 14px;
+      }
+    }
+  }
+}

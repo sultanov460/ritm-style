@@ -1,41 +1,45 @@
-.session{
-    padding: 100px 0;
+.session {
+  padding: 100px 0;
 
-    .session-title{
-        @include sectionTitle();
+  .session-title {
+    @include sectionTitle();
+  }
+
+  h1::before {
+    content: url(../images/symbol.svg);
+    margin-right: 45px;
+  }
+
+  h1::after {
+    content: url(../images/symbol.svg);
+    margin-left: 45px;
+    transform: scaleY(-1);
+  }
+
+  .session-list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .session-card {
+      background-color: coral;
+      padding: 194px 40px 30px;
+      border-radius: 10px;
+      background-image: url("..//images/session-card-img.jpg");
+      background-position: center;
+      background-size: cover;
     }
 
-    .session-list{
-        display: grid;
-        gap: 24px;
-        grid-template-columns: repeat(3,1fr);
-
-
-        .session-card{
-            background-color: coral;
-            padding: 194px 40px 30px;
-            border-radius: 10px;
-            background-image: url("..//images/session-card-img.jpg");
-            background-position: center;
-            background-size: cover;
-            
-            
-        }
-
-        .session-card1{
-            grid-row: span 2;
-            
-        }
-
-        .session-card-title{
-            font-size: 24px;
-            font-weight: 700;
-            font-family: $secondary-font;
-            line-height: 34px;
-            // margin-top: 456px - 194px !important;
-        }
+    .session-card1 {
+      grid-row: span 2;
     }
 
-    
+    .session-card-title {
+      font-size: 24px;
+      font-weight: 700;
+      font-family: $secondary-font;
+      line-height: 34px;
+      // margin-top: 456px - 194px !important;
+    }
+  }
 }
-

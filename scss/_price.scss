@@ -1,0 +1,74 @@
+.price {
+  margin-top: 233px;
+  .container {
+    max-width: 1076px;
+    h1 {
+      @include sectionTitle();
+    }
+
+    h1::before {
+      content: url(../images/symbol.svg);
+      margin-right: 45px;
+    }
+
+    h1::after {
+      content: url(../images/symbol.svg);
+      margin-left: 45px;
+      transform: scaleY(-1);
+    }
+
+    .price-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .price-texts {
+        max-width: 416px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+
+        .price-text {
+          display: flex;
+          font-size: 18px;
+          justify-content: space-between;
+          gap: 23px;
+
+          .invoice {
+            font-weight: 700;
+            font-family: $secondary-font;
+            width: 87px;
+            text-align: right;
+          }
+
+          .price-paragraph {
+            width: 268px;
+            font-family: $primary-font;
+            white-space: nowrap;
+          }
+
+          .price-paragraph::before {
+            content: url(../images/symbol.svg);
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .price-img {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        p {
+          font-size: 21px;
+          font-family: $secondary-font;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

@@ -38,6 +38,10 @@ ul {
   padding: 9px 15px;
   border: none;
   color: #fff;
+  transition: all 0.4s ease;
+}
+.nav-wrapper .nav-btn:hover {
+  background-color: #1b3a48;
 }
 
 @media (max-width: 1024px) {
@@ -86,6 +90,15 @@ ul {
   text-align: center;
   margin-bottom: 100px;
 }
+.session h1::before {
+  content: url(../images/symbol.svg);
+  margin-right: 45px;
+}
+.session h1::after {
+  content: url(../images/symbol.svg);
+  margin-left: 45px;
+  transform: scaleY(-1);
+}
 .session .session-list {
   display: grid;
   gap: 24px;
@@ -120,6 +133,15 @@ ul {
   text-align: center;
   margin-bottom: 100px;
 }
+.about h1::before {
+  content: url(../images/symbol.svg);
+  margin-right: 45px;
+}
+.about h1::after {
+  content: url(../images/symbol.svg);
+  margin-left: 45px;
+  transform: scaleY(-1);
+}
 .about .about-text {
   display: flex;
   flex-direction: column;
@@ -136,12 +158,155 @@ ul {
   font-weight: 300;
   line-height: 140%;
 }
-.about .about-wrapper {
+.about .about-wrapper .about-card-text1 {
   display: flex;
   justify-content: space-around;
 }
 .about .about-wrapper img {
   border-radius: 10px;
+}
+.about .about-wrapper .about-card-text2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.about .about-wrapper .about-card-text2 .about-text {
+  margin-top: 17px;
+}
+
+.price {
+  margin-top: 233px;
+}
+.price .container {
+  max-width: 1076px;
+}
+.price .container h1 {
+  font-size: 42px;
+  font-family: "El Messiri";
+  line-height: 52px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.price .container h1::before {
+  content: url(../images/symbol.svg);
+  margin-right: 45px;
+}
+.price .container h1::after {
+  content: url(../images/symbol.svg);
+  margin-left: 45px;
+  transform: scaleY(-1);
+}
+.price .container .price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price .container .price-wrapper .price-texts {
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.price .container .price-wrapper .price-texts .price-text {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  gap: 23px;
+}
+.price .container .price-wrapper .price-texts .price-text .invoice {
+  font-weight: 700;
+  font-family: "El Messiri";
+  width: 87px;
+  text-align: right;
+}
+.price .container .price-wrapper .price-texts .price-text .price-paragraph {
+  width: 268px;
+  font-family: "Open Sans";
+  white-space: nowrap;
+}
+.price .container .price-wrapper .price-texts .price-text .price-paragraph::before {
+  content: url(../images/symbol.svg);
+  margin-right: 20px;
+}
+.price .container .price-wrapper .price-img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.price .container .price-wrapper .price-img p {
+  font-size: 21px;
+  font-family: "El Messiri";
+  font-weight: 700;
+  text-align: center;
+}
+.price .container .price-wrapper .price-img img {
+  border-radius: 10px;
+}
+
+.contact {
+  padding-top: 174px;
+}
+.contact .container {
+  display: flex;
+  gap: 48px;
+}
+.contact .container .contact-image {
+  border-radius: 10px;
+}
+.contact .contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact .contact-cards .contact-card {
+  padding: 35px 45px;
+  border-radius: 10px;
+  background: #018ABE;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact .contact-cards .contact-card .contact-card-paragraph {
+  display: flex;
+  gap: 20px;
+}
+.contact .contact-cards .contact-card button {
+  margin-top: 10px;
+  color: #018ABE;
+  background-color: #fff;
+  padding: 9px 15px;
+  font-size: 13px;
+  max-width: 155px;
+  white-space: nowrap;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+.contact .contact-cards .contact-card button:hover {
+  background-color: #00709d;
+  color: #fff;
+}
+.contact .contact-cards .contact-card h1 {
+  font-family: "El Messiri";
+  font-size: 24px;
+  font-weight: 700;
+}
+.contact .contact-cards .contact-card p {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.end .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0px 30px;
+}
+.end .container p {
+  font-size: 14px;
+}
+.end .container span {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 * {
@@ -154,7 +319,7 @@ body {
 }
 
 .container {
-  max-width: 1298px;
+  max-width: 1296px;
   margin: 0 auto;
   padding: 0 15px;
 }/*# sourceMappingURL=style.css.map */
