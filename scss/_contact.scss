@@ -1,7 +1,7 @@
 .contact {
   padding-top: 174px;
 
-  .container {
+  .contact-wrapper {
     display: flex;
     gap: 48px;
 
@@ -22,6 +22,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      max-width: 392px;
 
       .contact-card-paragraph {
         display: flex;
@@ -55,6 +56,25 @@
         font-family: $primary-font;
         font-size: 14px;
       }
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .contact-image {
+      width: 100%;
+    }
+  }
+
+  .contact-cards {
+    margin: 0 auto;
+
+    .contact-card {
+      width: 100% !important;
     }
   }
 }

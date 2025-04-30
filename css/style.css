@@ -332,11 +332,11 @@ ul {
 .contact {
   padding-top: 174px;
 }
-.contact .container {
+.contact .contact-wrapper {
   display: flex;
   gap: 48px;
 }
-.contact .container .contact-image {
+.contact .contact-wrapper .contact-image {
   border-radius: 10px;
 }
 .contact .contact-cards {
@@ -351,6 +351,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 392px;
 }
 .contact .contact-cards .contact-card .contact-card-paragraph {
   display: flex;
@@ -381,6 +382,21 @@ ul {
   font-size: 14px;
 }
 
+@media (max-width: 1170px) {
+  .contact-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .contact-wrapper .contact-image {
+    width: 100%;
+  }
+  .contact-cards {
+    margin: 0 auto;
+  }
+  .contact-cards .contact-card {
+    width: 100% !important;
+  }
+}
 .end .container {
   display: flex;
   justify-content: space-between;
