@@ -60,6 +60,8 @@ ul {
 
 .hero-wrapper {
   background-image: url("..//images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
   min-height: 600px;
   border-radius: 10px;
   text-align: center;
@@ -79,6 +81,11 @@ ul {
   font-weight: 700;
 }
 
+@media (max-width: 410px) {
+  .hero-title {
+    font-size: 50px !important;
+  }
+}
 .session {
   padding: 100px 0;
 }
