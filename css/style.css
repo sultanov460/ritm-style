@@ -142,13 +142,13 @@ ul {
     grid-template-columns: repeat(1, 1fr) !important;
   }
   .session-title {
-    font-size: 30px !important;
+    font-size: 27px !important;
   }
-  h1::before {
-    margin-right: 25px !important;
+  .session-title::before {
+    margin-right: 15px !important;
   }
-  h1::after {
-    margin-left: 25px !important;
+  .session-title::after {
+    margin-left: 15px !important;
   }
 }
 .about {
@@ -226,6 +226,12 @@ ul {
   .about-text p {
     margin: 0 auto;
   }
+  .about-title::before {
+    margin-right: 20px !important;
+  }
+  .about-title::after {
+    margin-left: 20px !important;
+  }
 }
 .price {
   margin-top: 233px;
@@ -233,7 +239,7 @@ ul {
 .price .container {
   max-width: 1076px;
 }
-.price .container h1 {
+.price .container .price-title {
   font-size: 42px;
   font-family: "El Messiri";
   line-height: 52px;
@@ -297,6 +303,32 @@ ul {
   border-radius: 10px;
 }
 
+@media (max-width: 945px) {
+  .price-wrapper {
+    flex-direction: column;
+    gap: 31px;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 25px !important;
+  }
+  .price-img img {
+    width: 100%;
+  }
+  .price-text {
+    gap: 0;
+  }
+  .price-text p {
+    width: 160px !important;
+  }
+  .price-title::before {
+    margin-right: 15px !important;
+  }
+  .price-title::after {
+    margin-left: 15px !important;
+  }
+}
 .contact {
   padding-top: 174px;
 }

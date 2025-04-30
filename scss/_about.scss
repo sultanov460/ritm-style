@@ -84,4 +84,12 @@
       margin: 0 auto;
     }
   }
+
+  .about-title::before {
+    margin-right: 20px !important;
+  }
+
+  .about-title::after {
+    margin-left: 20px !important;
+  }
 }

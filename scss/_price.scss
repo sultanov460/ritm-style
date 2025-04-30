@@ -2,7 +2,7 @@
   margin-top: 233px;
   .container {
     max-width: 1076px;
-    h1 {
+    .price-title {
       @include sectionTitle();
     }
 
@@ -70,5 +70,40 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 945px) {
+  .price-wrapper {
+    flex-direction: column;
+    gap: 31px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 25px !important;
+  }
+
+  .price-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .price-text {
+    gap: 0;
+
+    p {
+      width: 160px !important;
+    }
+  }
+
+  .price-title::before {
+    margin-right: 15px !important;
+  }
+
+  .price-title::after {
+    margin-left: 15px !important;
   }
 }
