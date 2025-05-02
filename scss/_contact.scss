@@ -13,6 +13,7 @@
   .contact-cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 24px;
 
     .contact-card {
@@ -22,7 +23,6 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      max-width: 392px;
 
       .contact-card-paragraph {
         display: flex;
@@ -71,10 +71,17 @@
   }
 
   .contact-cards {
-    margin: 0 auto;
+    flex-direction: row !important;
+    width: 100% !important;
+  }
 
-    .contact-card {
-      width: 100% !important;
-    }
+  .contact-card {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column !important;
   }
 }

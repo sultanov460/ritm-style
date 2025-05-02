@@ -56,7 +56,7 @@
 
 @media (max-width: 515px) {
   .session-list {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: 1fr !important;
   }
 
   .session-title {
