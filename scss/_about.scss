@@ -5,6 +5,17 @@
     @include sectionTitle();
   }
 
+  h1::before {
+    content: url(../images/symbol.svg);
+    margin-right: 45px;
+  }
+
+  h1::after {
+    content: url(../images/symbol.svg);
+    margin-left: 45px;
+    transform: scaleY(-1);
+  }
+
   .about-text {
     display: flex;
     flex-direction: column;
@@ -25,11 +36,60 @@
   }
 
   .about-wrapper {
-    display: flex;
-    justify-content: space-around;
+    .about-card-text1 {
+      display: flex;
+      justify-content: space-around;
+    }
 
     img {
       border-radius: 10px;
     }
+
+    .about-card-text2 {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 100px;
+
+      .about-text {
+        margin-top: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .about-card-text1,
+  .about-card-text2 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .about-card-text1,
+  .about-card-text2 {
+    flex-direction: column;
+  }
+
+  .about-card-text2 {
+    margin-top: 20px !important;
+    img {
+      display: none;
+    }
+  }
+
+  .about-text {
+    text-align: center;
+
+    p {
+      margin: 0 auto;
+    }
+  }
+
+  .about-title::before {
+    margin-right: 20px !important;
+  }
+
+  .about-title::after {
+    margin-left: 20px !important;
   }
 }
